@@ -32,10 +32,27 @@
 
 //task2 
 
-int n = int.Parse(System.Console.ReadLine());
-int z = 1;
-for(int i=n; i>0; i/=10)
+// int n = int.Parse(System.Console.ReadLine());
+// int z = 1;
+// for(int i=n; i>0; i/=10)
+// {
+//     z *= i%10;
+// }
+// System.Console.WriteLine("Zarb: " + z);
+
+int n;
+n = int.Parse(System.Console.ReadLine());
+int[] arr = new int[n];
+for (int i = 0; i < n; i++)
 {
-    z *= i%10;
+    arr[i] = int.Parse(System.Console.ReadLine());
 }
-System.Console.WriteLine("Zarb: " + z);
+int max = -9999;
+for (int i = 0; i < n; i++)
+{
+    if (i > max)
+    {
+        max = i;
+    }
+}
+System.Console.WriteLine(max);
