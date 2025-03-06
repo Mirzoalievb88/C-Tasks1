@@ -31,10 +31,11 @@
 // }
 
 //task2 
+
 int n = int.Parse(System.Console.ReadLine());
-int sum = 0, z = 1;
+int z = 1;
 for(int i=n; i>0; i/=10)
 {
     z *= i%10;
 }
-System.Console.WriteLine("1*2*3*4*5 = " + z);
+System.Console.WriteLine("Zarb: " + z);
