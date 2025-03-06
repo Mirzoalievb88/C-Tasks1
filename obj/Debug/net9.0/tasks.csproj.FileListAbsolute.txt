@@ -12,3 +12,4 @@ C:\Users\Bahodur\Desktop\Home.Task\tasks\obj\Debug\net9.0\refint\tasks.dll
 C:\Users\Bahodur\Desktop\Home.Task\tasks\obj\Debug\net9.0\tasks.pdb
 C:\Users\Bahodur\Desktop\Home.Task\tasks\obj\Debug\net9.0\tasks.genruntimeconfig.cache
 C:\Users\Bahodur\Desktop\Home.Task\tasks\obj\Debug\net9.0\ref\tasks.dll
+C:\Users\Bahodur\Desktop\Home.Task\tasks\obj\Debug\net9.0\tasks.sourcelink.json
