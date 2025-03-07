@@ -121,17 +121,36 @@
 
 //task8
 
-int n;
+// int n;
+// n = int.Parse(System.Console.ReadLine());
+// int[] arr = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     arr[i] = int.Parse(System.Console.ReadLine());
+// }
+// for (int i = 0; i < n; i++)
+// {
+//     if(arr[i] % 2 != 0)
+//     {
+//         System.Console.Write(i + " ");
+//     }
+// }
+
+//task9
+
+int n,a,b;
 n = int.Parse(System.Console.ReadLine());
+a = int.Parse(System.Console.ReadLine());
+b = int.Parse(System.Console.ReadLine());
 int[] arr = new int[n];
 for (int i = 0; i < n; i++)
 {
     arr[i] = int.Parse(System.Console.ReadLine());
 }
-for (int i = 0; i < n; i++)
+for (int i = a; i < b; i++)
 {
-    if(arr[i] % 2 != 0)
+    if (arr[i] % 2 != 0)
     {
-        System.Console.Write(i + " ");
+        System.Console.WriteLine(arr[i]);
     }
 }
