@@ -75,6 +75,32 @@
 //     }
 // }
 
+//task5
+
+// int n;
+// n = int.Parse(System.Console.ReadLine());
+// int[] arr = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     arr[i] = int.Parse(System.Console.ReadLine());
+// }
+// int max = 9999;
+// Array.Sort(arr);
+// for (int i = 0; i < n; i++)
+// {
+//     if (arr[i] < max)
+//     {
+//         max = i;
+//     }
+// }
+// System.Console.WriteLine(max);
+
+//task6
+
+/////
+
+//task7
+
 int n;
 n = int.Parse(System.Console.ReadLine());
 int[] arr = new int[n];
@@ -82,13 +108,13 @@ for (int i = 0; i < n; i++)
 {
     arr[i] = int.Parse(System.Console.ReadLine());
 }
-int max = 9999;
 Array.Sort(arr);
 for (int i = 0; i < n; i++)
 {
-    if (arr[i] < max)
+    if ((arr[i] <= 0 && arr[i + 1] <= 0) || (arr[i] < 0 && arr[i + 1] < 0))
     {
-        max = i;
+        System.Console.WriteLine(arr[i]);
+        System.Console.WriteLine(arr[i+1]);
+        return;
     }
 }
-System.Console.WriteLine(max);
