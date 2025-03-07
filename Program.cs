@@ -1,35 +1,4 @@
-﻿//task1
-// using System;
-
-// class Program
-// {
-//     static void Main()
-//     {
-//         string input = Console.ReadLine();
-//         double deposit = Convert.ToDouble(input);
-
-//         double interestRate = 0;
-
-//         if (deposit < 100)
-//         {
-//             interestRate = 0.05;
-//         }
-//         else if (deposit <= 200)
-//         {
-//             interestRate = 0.07;
-//         }
-//         else
-//         {
-//             interestRate = 0.10;
-//         }
-
-//         double interest = deposit * interestRate;
-//         double totalAmount = deposit + interest;
- 
-//         Console.WriteLine(totalAmount);
-//     }
-// }
-
+﻿
 //task2 
 
 // int n = int.Parse(System.Console.ReadLine());
@@ -138,19 +107,36 @@
 
 //task9
 
-int n,a,b;
+// int n,a,b;
+// n = int.Parse(System.Console.ReadLine());
+// a = int.Parse(System.Console.ReadLine());
+// b = int.Parse(System.Console.ReadLine());
+// int[] arr = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     arr[i] = int.Parse(System.Console.ReadLine());
+// }
+// for (int i = a; i < b; i++)
+// {
+//     if (arr[i] % 2 != 0)
+//     {
+//         System.Console.WriteLine(arr[i]);
+//     }
+// }
+
+//task10
+
+int n;
 n = int.Parse(System.Console.ReadLine());
-a = int.Parse(System.Console.ReadLine());
-b = int.Parse(System.Console.ReadLine());
-int[] arr = new int[n];
+int[] arr = new int[i];
 for (int i = 0; i < n; i++)
 {
     arr[i] = int.Parse(System.Console.ReadLine());
 }
-for (int i = a; i < b; i++)
+for (int i = 0; i < n; i++)
 {
     if (arr[i] % 2 != 0)
     {
-        System.Console.WriteLine(arr[i]);
+        System.Console.Write(Math.Pow(arr[i]) + " ");
     }
 }
