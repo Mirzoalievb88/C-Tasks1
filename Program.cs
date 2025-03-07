@@ -61,16 +61,34 @@
 
 //task4
 
-int n = int.Parse(System.Console.ReadLine());
+// int n = int.Parse(System.Console.ReadLine());
+// int[] arr = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     arr[i] = int.Parse(System.Console.ReadLine());
+// }
+// for (int i = 0; i < n - 1; i++)
+// {
+//     if(arr[i] != arr[i+1])
+//     {
+//         System.Console.WriteLine(arr[i]);
+//     }
+// }
+
+int n;
+n = int.Parse(System.Console.ReadLine());
 int[] arr = new int[n];
 for (int i = 0; i < n; i++)
 {
     arr[i] = int.Parse(System.Console.ReadLine());
 }
-for (int i = 0; i < n - 1; i++)
+int max = 9999;
+Array.Sort(arr);
+for (int i = 0; i < n; i++)
 {
-    if(arr[i] != arr[i+1])
+    if (arr[i] < max)
     {
-        System.Console.WriteLine(arr[i]);
+        max = i;
     }
 }
+System.Console.WriteLine(max);
