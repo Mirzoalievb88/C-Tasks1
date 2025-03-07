@@ -40,19 +40,37 @@
 // }
 // System.Console.WriteLine("Zarb: " + z);
 
-int n;
-n = int.Parse(System.Console.ReadLine());
+//task3
+
+// int n;
+// n = int.Parse(System.Console.ReadLine());
+// int[] arr = new int[n];
+// for (int i = 0; i < n; i++)
+// {
+//     arr[i] = int.Parse(System.Console.ReadLine());
+// }
+// int max = -9999;
+// for (int i = 0; i < n; i++)
+// {
+//     if (i > max)
+//     {
+//         max = i;
+//     }
+// }
+// System.Console.WriteLine(max);
+
+//task4
+
+int n = int.Parse(System.Console.ReadLine());
 int[] arr = new int[n];
 for (int i = 0; i < n; i++)
 {
     arr[i] = int.Parse(System.Console.ReadLine());
 }
-int max = -9999;
-for (int i = 0; i < n; i++)
+for (int i = 0; i < n - 1; i++)
 {
-    if (i > max)
+    if(arr[i] != arr[i+1])
     {
-        max = i;
+        System.Console.WriteLine(arr[i]);
     }
 }
-System.Console.WriteLine(max);
